@@ -1,11 +1,14 @@
 {
+  "homepage": "http://zulkamaula.github.io/slrapp",
   "name": "reactjs_nix",
   "version": "1.0.0",
   "description": "ReactJS on Replit, using Vite bundler",
   "main": "index.js",
   "scripts": {
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d deploy",
   },
   "keywords": [],
   "author": "",
